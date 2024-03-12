@@ -1,4 +1,7 @@
 package org.example.phonemanagementajaxwebservice.repository;
 
-public interface IPhoneRepository {
+import org.example.phonemanagementajaxwebservice.model.Phone;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IPhoneRepository extends JpaRepository<Phone, Long> {
 }
