@@ -22,8 +22,8 @@ public class PhoneService implements IPhoneService {
     }
 
     @Override
-    public void save(Phone phone) {
-        phoneRepository.save(phone);
+    public Phone save(Phone phone) {
+        return phoneRepository.save(phone);
     }
 
     @Override

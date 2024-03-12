@@ -7,6 +7,6 @@ import java.util.Optional;
 public interface IPhoneService {
     Iterable<Phone> findAll();
     Optional<Phone> findById(Long id);
-    void save(Phone phone);
+    Phone save(Phone phone);
     void remove(Long id);
 }
